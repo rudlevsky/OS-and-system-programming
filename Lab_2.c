@@ -129,7 +129,6 @@ int main(int argc, char const *argv[]) {
 
         if (symlink(records[i].way, dist_file) == -1) 
            fprintf(stderr, "%s: %s\n",dist_file, strerror(errno));
-        
     }
     return 0;
 }
