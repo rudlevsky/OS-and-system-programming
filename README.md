@@ -14,6 +14,12 @@ sudo tune2fs -O ^ dir_index /dev /sdaXY
 
 Check the result using, ls -l -f.
 
+Laboratory task #3.
+
+Write a program for finding the array of values ​​of the function y[i]=sin(2*PI*i/N) (i=0,1,2...N-1) using the Taylor series. The user sets the values ​​of N and the number of n members of the Taylor series. To calculate one member of the Taylor series, a separate process is started. Each process displays on the screen and in the intermediate results file
+
+(create in the / tmp directory) its pid, i and the calculated value of the member of the series. The head process reads from the intermediate results file the values ​​of all calculated members of the Taylor series for each i, sums them up and the resulting value y[i] writes to the result file as: y[i]=value. Check the program for N=256 n=5; N=1024 n=10.
+
 Лабораторное задание #1.
 
 Написать скрипт, находящий в заданном каталоге и всех его подкаталогах все файлы заданного расширения и создающий для каждого найденного файла жесткую ссылку в заданном каталоге. Расширение файла и каталог для жестких ссылок задаются в качестве первого и второго аргумента командной строки.
@@ -27,3 +33,9 @@ Check the result using, ls -l -f.
 sudo tune2fs –O ^dir_index /dev/sdaXY
 
 Проверить результат, используя, ls -l –f.
+
+Лабораторное задание #3.
+
+Написать программу нахождения массива значений функции y[i]=sin(2*PI*i/N) (i=0,1,2…N-1) с использованием ряда Тейлора. Пользователь задаёт значения N и количество n членов ряда Тейлора. Для расчета одного члена ряда Тейлора запускается отдельный процесс. Каждый процесс выводит на экран и в файл промежуточных результатов
+
+(создать в каталоге /tmp) свой pid, i и рассчитанное значение члена ряда. Головной процесс считывает из файла промежуточных результатов значения всех рассчитанных членов ряда Тейлора для каждого i, суммирует их и полученное значение y[i] записывает в файл результата в виде: y[i] =значение. Проверить работу программы для N=256 n=5; N=1024 n=10.
