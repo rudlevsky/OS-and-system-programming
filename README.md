@@ -37,6 +37,13 @@ Signals exchanges:
 
 1->(8,7,6) SIGUSR1   8->4 SIGUSR1  7->4SIGUSR2   
  6->4 SIGUSR1  4->(3,2) SIGUSR1 2->1 SIGUSR2
+ 
+Laboratory task #5. 
+ 
+Write a program for finding an array of N consecutive values of the function y [i] = sin (2 * PI * i / N) (i = 0,1,2 ... N-1) using the Taylor series.
+The user sets the values of N and the number of n members of the Taylor series. To calculate each member of the Taylor series, a new separate thread is started.
+Each thread displays its id and calculated value of the series on the screen and in the file. The head process reads from the file the values of all calculated members of the Taylor series,
+sums them and the resulting value y [i] writes to the file. Check the program for N = 256 n = 5; N = 1024 n = 10.
 
 Лабораторное задание #1.
 
@@ -75,3 +82,10 @@ pid    ppid   завершил работу после X-го сигнала SIG
 
 1->(8,7,6) SIGUSR1   8->4 SIGUSR1  7->4SIGUSR2   
  6->4 SIGUSR1  4->(3,2) SIGUSR1 2->1 SIGUSR2
+
+Лабораторное задание #5.
+
+Написать программу нахождения массива N последовательных значений функции y[i]=sin(2*PI*i/N) (i=0,1,2…N-1) с использованием ряда Тейлора. 
+Пользователь задаёт значения N и количество n членов ряда Тейлора. Для расчета каждого члена ряда Тейлора запускается новый отдельный поток. 
+Каждый поток выводит на экран и в файл свой id и рассчитанное значение ряда. Головной процесс считывает из файла значения всех рассчитанных членов ряда Тейлора, 
+суммирует их и полученное значение y[i] записывает в файл. Проверить работу программы для N=256 n=5; N=1024 n=10.
